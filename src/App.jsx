@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from './components/Sidebar';
 import Widget from './components/Widget';
 import Post from './components/Post';
+import Postlist from './components/Postlist';
 
 
 const TwitterClone = () => {
@@ -43,7 +44,10 @@ const TwitterClone = () => {
 
         {/* Feed */}
         <div className="bg-gray-800 p-4 flex-grow">
-          <Post />
+          <Post /><div>
+          {/* <Postlist /> */}
+          </div>
+          <Postlist />
         </div>
 
         {/* Widgets */}
