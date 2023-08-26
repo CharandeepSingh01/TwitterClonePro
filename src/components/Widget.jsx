@@ -8,7 +8,7 @@ const Widget = () => {
             <ul className="pl-6 list-disc text-sm text-gray-300 py-2">
               <li className=''>Login / Logout using JWT</li>
               <li>Registration</li>
-              <li>Tweet create edit delete</li>
+              <li>Tweet create and delete</li>
               <li>Fully Responsive</li>
             </ul>
           </div>
