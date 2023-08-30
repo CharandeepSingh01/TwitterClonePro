@@ -1,6 +1,6 @@
 // import './App.css';
 import Login from './pages/Login';
-// import Signup from './pages/Signup';
+import Signup from './pages/Signup';
 import App from './App';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import NavBar from './components/NavBar';
@@ -36,6 +36,7 @@ function Home() {
       <Routes>
         <Route exact path="/" element={<App />}></Route>
         <Route exact path="/login" element={<Login />}></Route>
+        <Route exact path="/signup" element={<Signup />}></Route>
       </Routes>
     )
   }

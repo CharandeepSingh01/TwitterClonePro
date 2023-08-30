@@ -1,9 +1,9 @@
 import React from 'react'
-import { useSelector } from 'react-redux';
 
 
-const Sidebar = () => {
-    const user = useSelector(state => state.userReducer);
+
+const Sidebar = (props) => {
+    
 
   return (<>
           <div className="bg-blue-800 rounded-t-lg p-4 text-center h-28">
@@ -14,8 +14,8 @@ const Sidebar = () => {
             />
           </div>
           <div className="bg-gray-700 rounded-b-lg p-4 pt-16 text-center">
-            <h2 className="text-lg font-semibold">{user.user.fullName}</h2>
-            <p className="text-gray-400">@userhandle</p>
+            <h2 className="text-lg font-semibold">{props.user.user.fullName}</h2>
+            <p className="text-gray-400 flex flex-col">@{props.user.user.fullName}</p>
             <hr className="my-4 border-t-2 border-gray-600" />
             <div className="flex justify-around">
               <div>

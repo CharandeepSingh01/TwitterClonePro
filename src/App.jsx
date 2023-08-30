@@ -79,7 +79,7 @@ const TwitterClone = () => {
         <div className="bg-gray-700 flex items-center space-x-4 rounded-full lg:mr-8 ml-1">
           
 
-        <button onClick={() => logout()} id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="text-gray-400 bg-gray-700 hover:bg-blue-800  focus:outline-none font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center" type="button"><img src="https://static.thenounproject.com/png/5034901-200.png" alt=" " className='h-6 w-6 mr-2'></img>{user.user.fullName}<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <button onClick={() => logout()} id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="text-gray-300 bg-gray-700 hover:bg-blue-800  focus:outline-none font-bold rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center" type="button"><img src="https://static.thenounproject.com/png/5034901-200.png" alt=" " className='h-6 w-6 mr-2'></img>{user.user.fullName}<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
   </svg></button>
 
@@ -91,7 +91,7 @@ const TwitterClone = () => {
       <div className="flex flex-col md:flex-row bg-gray-800 text-white lg:pl-20 lg:pr-20">
         
         <div className="bg-gray-800 p-4 flex-none md:w-1/4">
-        <Sidebar />
+        <Sidebar user={user}/>
         </div>
 
         {/* Feed */}
