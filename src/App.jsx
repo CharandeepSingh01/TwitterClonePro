@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import more from '../src/images/dots-menu.png'
 import Sidebar from './components/Sidebar';
 import Widget from './components/Widget';
 import Post from './components/Post';
@@ -24,6 +25,7 @@ const TwitterClone = () => {
   }
 
   const [allposts, setAllposts] = useState([]);
+ 
 
     const CONFIG_OBJ = {
         headers: {
@@ -54,7 +56,7 @@ const TwitterClone = () => {
 
     useEffect(() => {
         getAllPosts();
-    }, []);
+    });
 
 
 
@@ -75,15 +77,15 @@ const TwitterClone = () => {
     class="bg-gray-700 text-white px-2 py-1 rounded focus:outline-none w-full sm:w-auto"
   />
 </div>
-        </div>
+        </div><div className='flex text-center'>
         <div className="bg-gray-700 flex items-center space-x-4 rounded-full lg:mr-8 ml-1">
           
 
         <button onClick={() => logout()} id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="text-gray-300 bg-gray-700 hover:bg-blue-800  focus:outline-none font-bold rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center" type="button"><img src="https://static.thenounproject.com/png/5034901-200.png" alt=" " className='h-6 w-6 mr-2'></img>{user.user.fullName}<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
   </svg></button>
-
-
+</div>
+    <img src={more} alt=" " className='h-6 w-6 lg:mr-8 mt-2'></img>
 
         </div>
       </nav>
@@ -96,6 +98,7 @@ const TwitterClone = () => {
 
         {/* Feed */}
         <div className="bg-gray-800 p-4 flex-grow">
+          
           <Post />
           {allposts.map((post) => {
                     return (

@@ -20,11 +20,11 @@ const Sidebar = (props) => {
             <div className="flex justify-around">
               <div>
                 <p className="text-gray-400">Followers</p>
-                <p className="font-semibold">100</p>
+                <p className="font-semibold">262</p>
               </div>
               <div>
                 <p className="text-gray-400">Following</p>
-                <p className="font-semibold">50</p>
+                <p className="font-semibold">107</p>
               </div>
             </div>
             <hr className="my-4 border-t-2 border-gray-600" />
