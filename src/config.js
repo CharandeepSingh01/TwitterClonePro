@@ -1,1 +1,1 @@
-export const API_BASE_URL = "http://localhost:4000";
+export const API_BASE_URL = "twitter-backend-n4fau91ek-charandeepsingh01.vercel.app";
