@@ -1,1 +1,1 @@
-export const API_BASE_URL = "https://twitter-backend-n4fau91ek-charandeepsingh01.vercel.app";
+export const API_BASE_URL = "https://twittercloneapi.onrender.com";
