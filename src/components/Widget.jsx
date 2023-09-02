@@ -11,6 +11,7 @@ const Widget = () => {
               <li>Tweet create and delete</li>
               <li>Fully Responsive</li>
             </ul>
+            <h3 className="text-gray-300 text-sm font-semibold mb-4 pl-2">NOTE: Please be patient as the request and the corresponding response, which will appear in the frontend, may take a few seconds longer than usual.</h3>
           </div>
         </>
   )
